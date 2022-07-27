@@ -1,7 +1,11 @@
 :root {
     --primary-text-color: #363958;
     --bg-color: #FFF9F4;
-    --btn-color: #FA804C;
+    --price-color: #FA804C;
+}
+
+body {
+    overflow-x: hidden;
 }
 
 /* Header background image */
@@ -11,6 +15,15 @@
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
+    width: 100vw;
+}
+
+main {
+    background-color: #FFFFFF;
+}
+
+.primary-color {
+    color: var(--primary-text-color);
 }
 
 /* Nav color */
@@ -19,12 +32,12 @@
 }
 
 .text-custom {
-    color: var(--btn-color);
+    color: var(--price-color);
 }
 
 /* Banner image half width */
 .small-full-width {
-    width: 40%;
+    width: 50%;
 }
 
 /* Bannar fixed width */
@@ -41,16 +54,37 @@ button > svg {
     text-align: center;
 }
 
+/* custom cards */
+.custom-card {
+    width: 23.125rem;
+    height: 34.377rem;
+    background-color: #ffffff;
+}
+
+/* card img bg color */
+.card-img-bg {
+    background-color: rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+}
+
 @media screen and (max-width: 677.99px) {
-    /* Bannar fixed width */
-    .banner-fixed-width {
-        width: 100%;
-        height: auto;
+    body {
+        overflow-x: hidden;
+    }
+    .banner-bg-img {
+        height: 100vh;
     }
     
+    /* Bannar fixed width */
+    .banner-fixed-width {
+        width: 18rem;
+        height: 11rem;
+    }
+
     /* Banner image full width */
     .small-full-width {
-        width: 100%;
-        height: auto;
+        width: 70%;
+        height: 80%;
+        margin-top: 80px;
     }
 }
