@@ -1,0 +1,56 @@
+:root {
+    --primary-text-color: #363958;
+    --bg-color: #FFF9F4;
+    --btn-color: #FA804C;
+}
+
+/* Header background image */
+.banner-bg-img {
+    background-image: url(images/bg-img.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+/* Nav color */
+.bg-custom {
+    background-color: var(--bg-color);
+}
+
+.text-custom {
+    color: var(--btn-color);
+}
+
+/* Banner image half width */
+.small-full-width {
+    width: 40%;
+}
+
+/* Bannar fixed width */
+.banner-fixed-width {
+    width: 22.3125rem;
+    height: 19rem;
+}
+
+/* Button svg size */
+button > svg {
+    width: 24px;
+    height: 24px;
+    padding-right: 8px;
+    text-align: center;
+}
+
+@media screen and (max-width: 677.99px) {
+    /* Bannar fixed width */
+    .banner-fixed-width {
+        width: 100%;
+        height: auto;
+    }
+    
+    /* Banner image full width */
+    .small-full-width {
+        width: 100%;
+        height: auto;
+    }
+}
