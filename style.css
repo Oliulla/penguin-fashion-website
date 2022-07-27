@@ -19,7 +19,7 @@ body {
 }
 
 main {
-    background-color: #FFFFFF;
+    background-color: #fff;
 }
 
 .primary-color {
@@ -67,6 +67,11 @@ button > svg {
     border-radius: 20px;
 }
 
+.custom-fluid-img {
+    width: 78px;
+    height: 82px;
+}
+
 @media screen and (max-width: 677.99px) {
     body {
         overflow-x: hidden;
@@ -84,7 +89,7 @@ button > svg {
     /* Banner image full width */
     .small-full-width {
         width: 70%;
-        height: 80%;
+        height: 30%;
         margin-top: 80px;
     }
 }
